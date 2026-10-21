@@ -1,8 +1,10 @@
 public class Main4 {
     public static void main(String[] argv) {
-        Point pStart = new Point(1,2);
-        Point pEnd = new Point(5,6);
+        Point p1 = new Point(4,5);
+        Point p2 = new Point(6 ,8);
 
-        Segment seg = new Segment(pStart, pEnd);
+        Segment segment = new Segment(p1, p2);
+        System.out.println("Segmento creado: " + segment);
+        System.out.println("Longitud del segmento: " + segment.getModule());
     }
 }
