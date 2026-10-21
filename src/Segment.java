@@ -8,6 +8,6 @@ public class Segment {
     }
 
     public Segment() {
-        this(new Point(0,0), new Point(0,0));
+        this(new Point(0, 0), new Point(0, 0));
     }
 }
