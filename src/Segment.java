@@ -25,4 +25,8 @@ public class Segment {
         return startPoint + " - " + endPoint;
     }
 
+    public void setOffset(int offX, int offY) {
+        startPoint.moveTo(startPoint.getX() + offX, startPoint.getY() + offY);
+        endPoint.moveTo(endPoint.getX() + offX, endPoint.getY() + offY);
+    }
 }
