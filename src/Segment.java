@@ -29,4 +29,12 @@ public class Segment {
         startPoint.moveTo(startPoint.getX() + offX, startPoint.getY() + offY);
         endPoint.moveTo(endPoint.getX() + offX, endPoint.getY() + offY);
     }
+
+    public void setStartPoint(Point startPoint) {
+        this.startPoint = startPoint;
+    }
+
+    public void setEndPoint(Point endPoint) {
+        this.endPoint = endPoint;
+    }
 }
