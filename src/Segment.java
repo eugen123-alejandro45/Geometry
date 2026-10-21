@@ -10,4 +10,14 @@ public class Segment {
     public Segment() {
         this(new Point(0, 0), new Point(0, 0));
     }
+
+    public double getModule() {
+        int x1 = startPoint.getX();
+        int y1 = startPoint.getY();
+        int x2 = endPoint.getX();
+        int y2 = endPoint.getY();
+        double distant = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+        return distant;
+    }
+
 }
