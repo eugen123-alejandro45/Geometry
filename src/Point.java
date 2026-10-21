@@ -28,7 +28,7 @@ public class Point {
         this.x = x;
         this.y = y;
     }
-
+    // Métodos getX() y getY() creados.
     public int getX() {
         return x;
     }
