@@ -20,4 +20,9 @@ public class Segment {
         return distant;
     }
 
+    @Override
+    public String toString() {
+        return startPoint + " - " + endPoint;
+    }
+
 }
