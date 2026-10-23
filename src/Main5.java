@@ -11,5 +11,8 @@ public class Main5 {
 
         Rectangle rectangle3 = new Rectangle(new Point(2,0), new Point(4,2));
         System.out.println(rectangle3);
+
+        Rectangle rectangle4 = new Rectangle(new Segment(new Point(2,2), new Point(4,0)));
+        System.out.println(rectangle4);
     }
 }
