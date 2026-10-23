@@ -8,4 +8,5 @@ public class Rectangle extends Point {
         heihgt = 0;
     }
 
+
 }
