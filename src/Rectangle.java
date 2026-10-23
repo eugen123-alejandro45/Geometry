@@ -15,9 +15,26 @@ public class Rectangle extends Point {
     }
 
     public Rectangle(Segment segment) {
-        super(segment.getStartPoint().getX(), segment.getEndPoint().getY());
-        this.width = width;
-        this.heihgt = heihgt;
+        super();
+        int x, y;
+        Point startPoint = segment.getStartPoint();
+        Point endPoint = segment.getEndPoint();
+        if (startPoint.getX() < endPoint.getX()) {
+            x = startPoint.getX();
+        } else {
+            x = endPoint.getX();
+        }
+        if (startPoint.getY() < endPoint.getY()) {
+            y = startPoint.getY();
+        } else {
+            y = endPoint.getY();
+        }
+        setX(x);
+        setY(y);
+        /*
+        setX(segment.getStartPoint().getX() < segment.getEndPoint().getX() ? segment.getStartPoint().getX() : segment.getEndPoint().getX());
+        setX(segment.getStartPoint().getY() < segment.getEndPoint().getY() ? segment.getStartPoint().getY() : segment.getEndPoint().getY());
+         */
     }
 
     public Rectangle(Point p1, Point p2) {
