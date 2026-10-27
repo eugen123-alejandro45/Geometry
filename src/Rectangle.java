@@ -40,14 +40,46 @@ public class Rectangle extends Point {
         setX(segment.getStartPoint().getY() < segment.getEndPoint().getY() ? segment.getStartPoint().getY() : segment.getEndPoint().getY());
          */
     }
-    public void getArea() {
-        this.heihgt *= heihgt;
-        this.width *= width;
+    public int getArea() {
+        return width * heihgt;
     }
 
-    public void getPoint(){
-
+    public Point getPoint(){
+        return new Point(getX(), getY());
     }
+
+    public Point getTopLeftPoint() {
+        return new Point(getX(), getY() + heihgt);
+    }
+
+    public Point getTopRightPoint () {
+        return new Point(getX() + width, getY() + heihgt);
+    }
+
+    public Point getBottomLeftPoint () {
+        return getPoint();
+    }
+
+    public Point getBottomRightPoint () {
+        return new Point(getX() + width, getY());
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeihgt () {
+        return heihgt;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public void setHeihgt(int heihgt) {
+        this.heihgt = heihgt;
+    }
+
     public Rectangle(Point p1, Point p2) {
         super(p1.getX(), p2.getY());
         width = p2.getX() - p1.getX();

@@ -14,5 +14,12 @@ public class Main5 {
 
         Rectangle rectangle4 = new Rectangle(new Segment(new Point(2,2), new Point(4,0)));
         System.out.println(rectangle4);
+
+        System.out.println(rectangle4.getArea());
+        System.out.println(rectangle4.getPoint());
+        Rectangle rectangle5 = new Rectangle(new Point(5,6), 6,8);
+        System.out.println("Arriba-Izquierda: " + rectangle5.getTopLeftPoint() + " Arriba-Derecha" +
+                rectangle5.getTopRightPoint() + " Abajo-Izquierda " + rectangle5.getBottomLeftPoint() +
+                " Abajo-Derecha " + rectangle5.getBottomRightPoint());
     }
 }
